@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Asap, sans-serif;
+  /* border: solid black; */
+}
+
+/* ############################################################################## */
+/* First Header */
+
+.headerOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px; */
+    background-color: rgba(22, 78, 117, 0.9);
+    color: #f1f1f1;
+    /* border: solid red; */
+}
+
+.logo {
+  margin-left: 6em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px;
+  /* border: solid red; */
+}
+
+.headerOne ul {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 10em;
+  list-style-type: none;
+  padding: 20px;
+  gap: 50px;
+  /* border: solid red; */
+
+}
+
+.one, .two, .three {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.one:hover, .two:hover, .three:hover {
+  cursor: pointer;
+  background-color: rgb(15, 55, 83)
+}
+
+/* ############################################################################## */
+
+/* Second Header */
+
+.headerTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(22, 78, 117, 0.7);
+    /* border: solid blue; */
+    gap: 80px;
+}
+
+.headerText {
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+/* clickable dropdown */
+/* WDS video - https://www.youtube.com/watch?v=S-VeYcOCFZw&t=251s */
+/* https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown */
+
+/* Meals */
+.dropdownMeals {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtnMeals {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 10%;
+  border: none;
+  cursor: pointer;
+}
+.mealContent {
+  display: none;
+  position: absolute;
+  /* makes the dropdown push right as it appears */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.mealContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.mealContent a:hover {
+  background-color: #f1f1f1
+}
+.dropdownMeals:hover .mealContent {
+  display: block;
+}
+.dropdownMeals:hover .dropbtnMeals {
+  background-color: #3e8e41;
+}
+
+/* Treats */
+.dropdownTreats {
+  position: relative;
+  display: inline-block;
+}
+.dropbtnTreats {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10%;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.treatContent {
+  display: none;
+  position: absolute;
+  /* makes the dropdown push right as it appears */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.treatContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.treatContent a:hover {
+  background-color: #f1f1f1
+}
+.dropdownTreats:hover .treatContent {
+  display: block;
+}
+.dropdownTreats:hover .dropbtnTreats {
+  background-color: #3e8e41;
+}
+
+/* ############################################################################## */
+
+/* Picture Gallery */
+
+.squares {
+  margin-top: 20px;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* border: solid blue; */
+
+}
+
+.themeContent {
+  border: solid red;
+}
+
+.themeContent h2{
+  font-size: 1.9em;
+  font-style: italic;
+}
+
+
+.info {
+  /* border: solid red; */
+}
+
+.contentContainer {
+  margin: 20px auto;
+  width: 1150px;
+  /* border: solid green; */
+}
+
+.pageNumbers {
+  /* display: flex;
+  justify-content: center; */
+  /* border: solid purple; */
+}
+
+/* ############################################################################## */
+/* https://www.javatpoint.com/how-to-add-social-media-icons-in-html */
+
+
+ /* Style all font social media icons */
+
+ .socialFooter {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* border: solid red; */
+  gap: 10px;
+ }
+
+ .fa {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+/* Linkedin */
+.fa-linkedin {  
+  background: #007bb5;  
+  color: white;  
+}
+
+/* Instagram */
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+
+/* ############################################################################## */
