@@ -10,8 +10,16 @@
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Asap, sans-serif;
-  /* border: solid black; */
+  background-color: rgb(248, 248, 248);
+  border: solid red;
 }
+
+.contentContainer {
+  margin: 20px auto;
+  width: 1150px;
+  /* border: solid green; */
+}
+
 
 /* ############################################################################## */
 /* First Header */
@@ -24,6 +32,9 @@ body {
     background-color: rgba(22, 78, 117, 0.9);
     color: #f1f1f1;
     /* border: solid red; */
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .logo {
@@ -67,7 +78,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgba(22, 78, 117, 0.7);
+    background-color: rgba(22, 78, 117, 0.8);
     /* border: solid blue; */
     gap: 80px;
 }
@@ -165,47 +176,86 @@ body {
 }
 
 /* ############################################################################## */
+/* Writing under header */
+
+.themeContent h2 {
+  font-weight: 300;
+  font-size: 1.9em;
+  font-style: italic;
+  padding: 20px;
+}
+
+#firstP {
+  font-weight: 200;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+#secondP {
+  font-weight: 200;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.randomButtons {
+  padding: 10px;
+}
+
+#rbtns {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 70px;
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+  color: rgba(22, 78, 117, 0.9);
+  border: solid 2px rgba(22, 78, 117, 0.9);
+  border-radius: 3%;
+}
+
+#rbtns:hover {
+  background-color: rgba(22, 78, 117, 0.9);
+  color: white;
+}
+
+/* ############################################################################## */
 
 /* Picture Gallery */
 
 .squares {
-  margin-top: 20px;
+  margin-top: 50px;
   max-width: 1150px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
-  /* border: solid blue; */
-
-}
-
-.themeContent {
-  border: solid red;
-}
-
-.themeContent h2{
-  font-size: 1.9em;
-  font-style: italic;
-}
-
-
-.info {
-  /* border: solid red; */
-}
-
-.contentContainer {
-  margin: 20px auto;
-  width: 1150px;
   /* border: solid green; */
 }
 
-.pageNumbers {
-  /* display: flex;
-  justify-content: center; */
-  /* border: solid purple; */
+.info {
+  margin-top: 20px;
+  width: min-content;
+  background-color: white;
+  /* border: solid red; */
+}
+
+.info:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all .2s ease-out 0s;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
+}
+
+.text {
+  padding: 20px;
+  font-size: 1.6em;
+  font-weight: 500;
+  /* border: solid green; */
 }
 
 /* ############################################################################## */
+
+
 /* https://www.javatpoint.com/how-to-add-social-media-icons-in-html */
 
 
@@ -260,3 +310,15 @@ body {
 }  
 
 /* ############################################################################## */
+
+/* footer */
+
+.infoFooter {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: 20px; */
+  background-color: rgba(22, 78, 117, 0.9);
+  color: #f1f1f1;
+  border: solid red;
+}

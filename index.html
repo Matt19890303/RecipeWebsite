@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
     <title>Recipe Site</title>
 </head>
 <body>
     <div class="headerOne">
         <div class="logo">GREAT RECIPES</div>
         <ul>
-            <!-- <li class="logo">LOGO</li> -->
             <li><a target="_blank" href="#" class="one">About Us</a></li>
             <li><a target="_blank" href="#" class="two">Contact</a></li>
             <li><a target="_blank" href="#" class="three">Stores</a></li>
@@ -38,69 +38,98 @@
           </div>
         </div>
     </div>
+
     <div class="contentContainer">
-        <div class="themeContent">
-            <h2>Ravishing & Easy to Follow Recipes</h2>
-            <p>Fresh recipes you can try at home from this Market</p>
-            <p>From the fresh fruit covered breakfasts and creamy pasta to chocolate-dipped ice cream, we’ve got recipes for any occasion. They’re fun to make and even better to eat! Try a recipe today. Need the ingredients? You can find fresh fruit and vegetables and more at a store near you.</p>
+
+      <div class="themeContent">
+        <h2>Ravishing & Easy to Follow Recipes</h2>
+        <p id="firstP">Fresh recipes you can try at home from this Market</p>
+        <p id="secondP">From the fresh fruit covered breakfasts and creamy pasta to chocolate-dipped ice cream, we’ve got recipes for any occasion. They’re fun to make and even better to eat! Try a recipe today. Need the ingredients? You can find fresh fruit and vegetables and more at a store near you.</p>
+      </div>
+
+      <!-- Nav Buttons -->
+      <div class="randomButtons">
+        <button id="rbtns">SPECIALS</button>
+        <button id="rbtns">STORES</button>
+        <button id="rbtns">INSTAGRAM</button>
+      </div>
+
+      <!-- Gallery -->
+      <div class="galleryContainer">
+        <div class="squares">
+          <div class="info">
+            <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
+            <div class="text">This is a type of plant. We love this one.</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Smoked Salmon Fish Cakes.jpg" width = "350" height = "250" alt="Smoked Salmon Fish Cakes">
+            <div class="text">We have so many plants. Yay plants.</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
+            <div class="text">This is a type of plant. We love this one.</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
+            <div class="text">This is a type of plant. We love this one.</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
+            <div class="text">This is a type of plant. We love this one.</div>
+          </div>
+
+          <div class="info">
+            <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+            <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="info">
+              <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
+              <div class="text">This is another type of plant. Isn't it nice</div>
+          </div>
+
+          <div class="pageNumbers">
+            <span class="pagesCurrent">1</span>
+            <a class="pages" href="https://foodloversmarket.co.za/recipes/">2</a>
+            <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=3">3</a>
+            <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=4">4</a>
+            <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=2">5</a>
+            <span class="pagesDots">...</span>
+            <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=2">></a>
+          </div>
         </div>
-
-        <!-- Nav Buttons -->
-        <button>SPECIALS</button>
-        <button>STORES</button>
-        <button>INSTAGRAM</button>
-
-        <!-- Gallery -->
-        <div class="galleryContainer">
-            <div class="squares">
-                <div class="info">
-                    <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
-                    <div class="text">This is a type of plant. We love this one.</div>
-                  </div>
-                  <div class="info">
-                    <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
-                    <div class="text">This is another type of plant. Isn't it nice</div>
-                  </div>
-                  <div class="info">
-                    <img src="images/Smoked Salmon Fish Cakes.jpg" width = "350" height = "250" alt="Smoked Salmon Fish Cakes">
-                    <div class="text">We have so many plants. Yay plants.</div>
-                  </div>
-                  <div class="info">
-                     <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
-                      <div class="text">This is a type of plant. We love this one.</div>
-                  </div>
-                  <div class="info">
-                    <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
-                    <div class="text">This is another type of plant. Isn't it nice</div>
-                  </div>
-                  <div class="info">
-                      <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
-                      <div class="text">This is another type of plant. Isn't it nice</div>
-                  </div>
-                  <div class="info">
-                    <img src="images/Chicken Curry.jpg" width = "350" height = "250" alt="Chicken Curry">
-                     <div class="text">This is a type of plant. We love this one.</div>
-                 </div>
-                 <div class="info">
-                   <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
-                   <div class="text">This is another type of plant. Isn't it nice</div>
-                 </div>
-                 <div class="info">
-                     <img src="images/Moussaka.jpg" width = "350" height = "250" alt="Moussaka">
-                     <div class="text">This is another type of plant. Isn't it nice</div>
-                 </div>
-                 <div class="pageNumbers">
-                    <span class="pagesCurrent">1</span>
-                    <a class="pages" href="https://foodloversmarket.co.za/recipes/">2</a>
-                    <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=3">3</a>
-                    <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=4">4</a>
-                    <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=2">5</a>
-                    <span class="pagesDots">...</span>
-                    <a class="pages" href="https://foodloversmarket.co.za/recipes/?pg=2">></a>
-                 </div>
-            </div>
-            
+      </div>
     </div>
+
     <div class="socialFooter">
         <!-- Add font awesome icons -->
         <a href="#" class="fa fa-facebook"></a>
@@ -112,7 +141,9 @@
         <div class="socialIcon" data-url="https://instagram"></div>
         <div class="socialIcon" data-url="https://linkedin"></div> -->
     </div>
-    <div class="infoFooter"></div>
+    <div class="infoFooter">
+      <div class="logo">GREAT RECIPES</div>
+    </div>
 
 </body>
 </html>
