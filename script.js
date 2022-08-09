@@ -3,8 +3,10 @@ window.onscroll = function() {headerScroll()};
 
 function headerScroll() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector(".logo").style.padding = "10px";
+    document.querySelector(".logo").style.padding = "5px";
+    document.querySelector(".logo").style.fontSize = "2em";
   } else {
-    document.querySelector(".logo").style.padding = "20px";
+    document.querySelector(".logo").style.padding = "15px";
+    document.querySelector(".logo").style.fontSize = "2.5em";
   }
 } 
