@@ -20,13 +20,21 @@
       </div>
       
         <ul>
-            <li><a target="_blank" href="aboutUs.html" id="one">About Us</a></li>
-            <li><a target="_blank" href="contactUs.html" id="two">Contact Us</a></li>
-            <li><a target="_blank" href="stores.html" id="three">Stores</a></li>
+          <li><a target="_blank" href="index.html" id="home">Home</a></li>
+          <li><a target="_blank" href="recipes.html" id="recipes">Recipes</a></li>
+          <li><a target="_blank" href="aboutUs.html" id="about-us">About Us</a></li>
+          <li><a target="_blank" href="stores.html" id="stores">Stores</a></li>
         </ul>
+    </div>
+
+    <div class="headerTwo">
+      <div class="headerTwoA">
+        <div class="headerText">Customer Care</div>
+      </div>
     </div>
     
     <div class="form-container">
+      <div class="inner-container">
         <form action="action_page.php">
       
           <label for="fname">First Name</label>
@@ -40,15 +48,19 @@
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="south-africa">South Africa</option>
+            <option value="china">China</option>
           </select>
       
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
-      
         </form>
-      </div> 
+      </div>
+    </div>
+    
 
     <div class="social">
       <div class="circle">
@@ -73,7 +85,7 @@
             <li id="numbers"><i class="fa fa-phone"></i> 086 000 7728 </li>
             <li id="numbers"><i class="fa fa-phone"></i> 021 531 2377 </li>
             <li id="numbers"><i class="fa fa-phone"></i> 021 531 2378 </li>
-            <button id="contact-btn">CONTACT US</button>
+            <a href="contactUs.html">CONTACT US</a>
           </div>
         </div>
       </div>
@@ -92,7 +104,8 @@
         <div class="register">
           <div id="register-text">Register To Receive Our Specials</div>
           <p>Sign me up to be notified on the best specials and weekly news</p>
-          <button id="register-btn">CLICK ME</button>
+          <!-- <a href="contactUs.html">CONTACT US</a> -->
+          <li id="register-btn">CLICK ME</li>
         </div>
         <div class="footer-logo-box">
           <div id="cutlery-logo-footer">
@@ -103,6 +116,10 @@
         
       </div>
       
+    </div>
+
+    <div class="copyright-footer">
+      <p>All Rights Reserved © 2022 | Site powered by Matt</p>
     </div>
 
 </body>

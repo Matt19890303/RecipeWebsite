@@ -5,20 +5,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Asap, sans-serif;
   background-color: rgb(248, 248, 248);
-  /* border: solid red; */
 	position: relative;
-
 }
 
 .contentContainer {
-  margin: 20px auto;
-  width: 1150px;
+  padding: 0 2em;
+  margin: 0 auto;
+  max-width: 1150px;
   /* border: solid green; */
 }
 
@@ -38,7 +37,7 @@ body {
   position: sticky;
   top: 0;
   /* z-index keep the header in front of allthe content (positive in front and negative behind) */
-  z-index: 1;
+  z-index: 5;
 }
 
 .logo-box {
@@ -50,6 +49,7 @@ body {
 }
 
 .logo {
+  /* background-color: rgba(15, 57, 87, 1.2); */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5em;
   font-weight: bold;
@@ -66,6 +66,10 @@ body {
   border-radius: 50%;
 }
 
+/* .Logo:hover, .cutlery-logo:hover {
+  cursor: pointer;
+} */
+
 .headerOne ul {
   display: flex;
   align-items: center;
@@ -76,14 +80,14 @@ body {
   /* border: solid red; */
 }
 
-#one, #two, #three, #four, #five{
+#home, #about-us, #contact-us, #recipes, #stores{
   color: #f1f1f1;
   text-decoration: none;
   padding: 10px;
   transition: background-color 250ms linear;
 }
 
-#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
+#home:hover, #about-us:hover, #contact-us:hover, #recipes:hover, #stores:hover {
   cursor: pointer;
   background-color: rgba(22, 78, 117, 1.2);
 }
@@ -129,7 +133,7 @@ body {
 }
 
 .dropbtnMeals {
-  width: 100px;
+  max-width: 100px;
   margin-right: 90px;
   background-color: #4CAF50;
   color: white;
@@ -179,7 +183,7 @@ body {
 }
 
 .dropbtnTreats {
-  width: 100px;
+  max-width: 100px;
   background-color: #4CAF50;
   color: white;
   border-radius: 5%;
@@ -291,6 +295,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
   background-color: rgba(22, 78, 117, 0.8);
  }
@@ -356,14 +361,16 @@ body {
 
 .infoFooter {
   display: flex;
+  justify-content: center;
   background-color: rgba(15, 57, 87, 1.2);
   color: #f1f1f1;
+  /* border: solid red; */
 }
 
 /* Customer Care */
 
 .contact-section{
-  /* border: solid red; */
+  /* border: solid greenyellow; */
 }
 
 .customer-care {
@@ -371,10 +378,11 @@ body {
   border: 2px solid #f1f1f1;
   /* Top Right Bottom Left */
   margin: 65px 40px 200px 300px;
+  width: 250px;
 }
 
 .CC-text {
-  width: 13.3em;
+  max-width: 13.3em;
   font-weight: 900;
   font-size: 20px;
   padding: 10px;
@@ -383,30 +391,34 @@ body {
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 20px;
 }
 
-#numbers {
+#contact-numbers {
   font-size: 18px;
   padding: 5px;
   margin: 5px;
 }
 
-#contact-btn {
-  border: none;
-  margin-top: 10px;
-  width: 15em;
+.box a {
+  text-decoration: none;
   color: rgba(22, 78, 117, 0.9);
   background-color: #f1f1f1;
   font-size: 15px;
   font-weight: 700;
+  text-align: center;
   padding: 8px;
+  margin-top: 10px;
 }
 
-#contact-btn:hover {
+.box a:hover {
   color: white;
   background-color: rgba(22, 78, 117, 1.2);
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: .4s;
 }
 
 /* More Info */
@@ -476,12 +488,15 @@ body {
   font-size: 15px;
   font-weight: 700;
   padding: 10px;
+  text-align: center;
+  list-style-type: none;
 }
 
 #register-btn:hover {
   color: white;
   background-color: rgba(22, 78, 117, 1.2);
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: .4s;
 }
 
 .footer-logo-box {
@@ -507,6 +522,162 @@ body {
   border-radius: 50%;
 }
 
+/* ############################################################################## */
+/* Home Page */
+/* ############################################################################## */
+/* CSS Grid Images */
+/* https://www.google.com/search?channel=fs&client=ubuntu&q=using+grid+for+images+css#kpvalbx=_CocGY7CwG-DBxc8P4Oy2wAM23 */
+
+
+
+/* Grid pics */
+
+section {
+  /* border: solid red; */
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.image-grid-primary {
+  --gap: 16px;
+  --num-cols: 2;
+  --row-height: 300px;
+
+  padding: var(--gap);
+  display: grid;
+  /* for the columns on the grid, we want 4 equal width columns */
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  /* we want unlimited rows at the height of 300px */
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.stores-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/vision.jpg");
+  /* The images will maintain their aspect ratio */
+  background-size: cover;
+  transition: opacity 250ms linear;
+  /* border: solid green; */
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/vision.jpg");
+  /* The images will maintain their aspect ratio */
+  background-size: cover;
+  transition: opacity 250ms linear;
+  /* border: solid blue; */
+}
+
+.image-grid-primary a {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.stores-image:hover, .news-image:hover {
+  cursor: pointer;
+  transition: .4s;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid-primary {
+    --num-cols: 1;
+    --row-height: 200px;
+  }
+}
+
+
+.image-grid-secondary {
+  --gap: 16px;
+  --num-cols: 3;
+  --row-height: 300px;
+
+
+  padding: var(--gap);
+  display: grid;
+  /* for the columns on the grid, we want 4 equal width columns */
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  /* we want unlimited rows at the height of 300px */
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+
+}
+
+.recipes-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/vision.jpg");
+  /* The images will maintain their aspect ratio */
+  background-size: cover;
+  transition: opacity 250ms linear;
+  /* border: solid green; */
+}
+
+.our-story-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/vision.jpg");
+  /* The images will maintain their aspect ratio */
+  background-size: cover;
+  transition: opacity 250ms linear;
+  /* border: solid blue; */
+}
+
+.specials-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/vision.jpg");
+  /* The images will maintain their aspect ratio */
+  background-size: cover;
+  transition: opacity 250ms linear;
+  /* border: solid blue; */
+}
+
+.image-grid-secondary a {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.recipes-image:hover, .specials-image:hover, .our-story-image:hover {
+  cursor: pointer;
+  transition: .4s;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+/* Anything under 950px */
+@media screen and (max-width: 950px) {
+  .image-grid-secondary {
+    --num-cols: 1;
+    --row-height: 200px;
+  }
+}
+
 
 /* ############################################################################## */
 /* About Us */
@@ -515,21 +686,30 @@ body {
 
 .aboutUs-galleryContainer {
   margin: 20px auto;
-  width: 1400px;
+  max-width: 1400px;
   /* border: solid red; */
 }
+
+/* @media (max-width: 700px) {
+  .aboutUs-galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
+
 
 .aboutUs-squares {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* margin-bottom: 20px; */
+  flex-wrap: wrap;
   /* border: solid red; */
 }
 
+
 .aboutUs-pics {
-  width: 600px; 
-  height: 450px;
+  max-width: 600px; 
+  min-height: 450px;
   text-align: center;
   /* border: solid green; */
 }
@@ -538,8 +718,8 @@ body {
   font-size: 36px;
   font-weight: 450;
   align-content: center;
-  width: 800px;
-  height: 450px;
+  max-width: 800px;
+  min-height: 450px;
   padding: 20px;
   /* border: solid blue; */
 }
@@ -557,8 +737,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 550px;
-  height: 350px;
+  max-width: 550px;
+  min-height: 350px;
 }
 
 #our-story-pic:hover {
@@ -571,8 +751,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 550px;
-  height: 350px;
+  max-width: 550px;
+  min-height: 350px;
 }
 
 #history-pic:hover {
@@ -584,8 +764,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 550px;
-  height: 350px;
+  max-width: 550px;
+  min-height: 350px;
 }
 
 #valuesCulture-pic:hover {
@@ -597,8 +777,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 550px;
-  height: 350px;
+  max-width: 550px;
+  min-height: 350px;
 }
 
 #vision-pic:hover {
@@ -609,18 +789,22 @@ body {
 /* ############################################################################## */
 /* Contact Us */
 /* https://www.w3schools.com/howto/howto_css_contact_form.asp */
+/* https://css-tricks.com/a-complete-guide-to-links-and-buttons/ */
 /* ############################################################################## */
 
  /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  /* Full width */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* Make sure that padding and width stays in place */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -639,25 +823,32 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.inner-container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 } 
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  /* border: solid blue; */
+  padding: 50px;
+}
 
 /* ############################################################################## */
 /* Stores */
 /* ############################################################################## */
 
-.map-ontainer {
-  height: 100vh;
+.map-container {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.map-ontainer h1 {
+.map-container h1 {
   margin-top: 50px;
   padding: 30px;
 }
@@ -667,4 +858,18 @@ iframe {
   height: 60vh;
   border: 2px solid black;
   padding: 30px;
+}
+
+
+.copyright-footer {
+  /* text-align: center;   */
+  background-color: rgba(2, 20, 46, 0.95);
+  min-height: 50px;
+  color: rgb(228, 228, 228);
+}
+
+.copyright-footer p {
+  padding: 15px;
+  font-size: 15px;
+  margin-left: 50px;
 }
