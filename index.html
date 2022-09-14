@@ -11,7 +11,7 @@
     <title>Home Page</title>
 </head>
 <body>
-  <div class="headerOne">
+  <div class="primary-header">
     <div class="logo-box">
       <div class="cutlery-logo">
         <img src="images/knife&fork.png" width = "50" height = "50" alt="">
@@ -19,8 +19,7 @@
           <a href="index.html"><img src="images/knife&fork.png" width = "50" height = "50"></a>
         </nav> -->
       </div>
-      <!-- <div class="logo">GREAT RECIPES</div>   -->
-      <div class="logo" onclick="window.location.href='index.html'">Awesome Store</div>
+      <div class="logo" onclick="window.location.href='index.html'">MATT'S FOOD STORE</div>
     </div>
     
       <ul>
@@ -31,18 +30,28 @@
       </ul>  
   </div>
   
-  <div class="headerTwo">
-    <div class="headerTwoA">
-      <div class="headerText">GREAT RECIPES</div>
+  <section>
+    <div class="first-image">
+      <div id="first-image-text">WELCOME</div>
     </div>
-  </div>
+  </section>
 
   <section>
-    <!-- <div class="home-page-image"> -->
-      <!-- <a id="first-image" href="#">Welcome!</a> -->
-    <img src="images/homePageImage2.jpg" alt="Moussaka" class="home-page-image">
-    <!-- </div> -->
+    <div class="first-text">
+      <h2>
+        Awesome Store's Market - Your weekly fresh shopping destination
+      </h2>
+      <p>Best in fresh fruit and vegetables for the best value - all under one roof.
+        
+        At Awesome Store's Market, you’ll get everything your household needs and more.
+        From fresh fruit and vegetables to meat, healthy snacks, dried fruit, beverages, a deli, and a bakery for hot foods, you’ll be spoilt for choice.
+        
+        We’re more than a supermarket. We’re a market for food lovers.
+        
+        Fancy an alcoholic beverage to go with your food? Visit a Market Liquors nearby.</p>
+    </div>
   </section>
+
 
   <section>
     <div class="image-grid-primary">
@@ -74,45 +83,30 @@
     </div>
   </div>
 
-  <div class="infoFooter">
+  <div class="primary-footer">
     <div class="contact-section">
-      <div class="customer-care">
-        <div class="CC-text">CUSTOMER CARE</div>
-        <div class="box">
-          <li id="contact-numbers"><i class="fa fa-phone"></i> 086 000 7728 </li>
-          <li id="contact-numbers"><i class="fa fa-phone"></i> 021 531 2377 </li>
-          <li id="contact-numbers"><i class="fa fa-phone"></i> 021 531 2378 </li>
-          <a href="contactUs.html">CONTACT US</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="info-section">
-      <div class="more-info">
-        <div id="GM-text">GET MORE</div>
-        <li id="GM-info"><a href="#">Specials</a></li>
-        <li id="GM-info"><a href="#">News</a></li>
-        <li id="GM-info"><a href="stores.html">Store Locator</a></li>
-        <li id="GM-info"><a href="#">Careers</a></li>        
-      </div>
-    </div>
-    
-    <div class="register-section">
-      <div class="register">
-        <div id="register-text">Register To Receive Our Specials</div>
-        <p>Sign me up to be notified on the best specials and weekly news</p>
-        <!-- <a href="contactUs.html">CLICK ME</a> -->
-        <li id="register-btn">CLICK ME</li>
-      </div>
-      <div class="footer-logo-box">
-        <div id="cutlery-logo-footer">
-          <img src="images/knife&fork.png" width = "80" height = "80" alt="Animated Chef">
-        </div>
-        <div class="logo2">Awesome Store</div>  
-      </div>
+      <div id="contact-header">GET IN CONTACT</div>
+      <li id="contact-numbers"><i class="fa fa-phone"></i> 086 000 7728 </li>
+      <li id="contact-numbers"><i class="fa fa-phone"></i> 021 531 2377 </li>
+      <li id="contact-numbers"><i class="fa fa-phone"></i> 021 531 2378 </li>
+      <button href="contactUs.html" id="contact-btn">CONTACT US</button>
     </div>
 
+    <div class="quick-links-section">
+      <div id="quick-links-header">QUICK LINKS</div>
+      <a href="#" id="quick-links-text">Specials</a>
+      <a href="#" id="quick-links-text">News</a>
+      <a href="stores.html" id="quick-links-text">Store Locator</a>
+      <a href="#" id="quick-links-text">Home</a>
+    </div>
+
+    <div class="register-section">
+      <div id="register-header">REGISTER TO RECEIVE OUR SPECIALS</div>
+      <p>Sign me up to be notified on the best specials and weekly news</p>
+      <button href="contactUs.html" id="register-btn">CLICK ME</button>
+    </div>
   </div>
+
   <div class="copyright-footer">
     <p>All Rights Reserved © 2022 | Site powered by Matt</p>
   </div>

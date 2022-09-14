@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 * {
     margin: 0;
@@ -25,13 +25,13 @@ body {
 
 /* First Header */
 
-.headerOne {
+.primary-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(15, 57, 87, 1.2);
   color: #f1f1f1;
-  padding: 8px;
+  /* padding: 8px; */
   /* border: solid red; */
   position: sticky;
   top: 0;
@@ -49,7 +49,8 @@ body {
 
 .logo {
   /* background-color: rgba(15, 57, 87, 1.2); */
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Baloo 2', cursive;
   font-size: 2.5em;
   font-weight: bold;
   padding: 15px;
@@ -69,7 +70,7 @@ body {
   cursor: pointer;
 } */
 
-.headerOne ul {
+.primary-header ul {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -231,7 +232,6 @@ body {
 .themeContent h2 {
   font-weight: 300;
   font-size: 1.9em;
-  /* font-style: italic; */
   padding: 20px;
 }
 
@@ -290,7 +290,7 @@ body {
 
  .social {
   margin-top: 50px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,168 +359,153 @@ body {
 
 /* footer */
 
-.infoFooter {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(15, 57, 87, 1.2);
-  color: #f1f1f1;
+.primary-footer {
   /* border: solid red; */
-}
-
-/* Customer Care */
-
-.contact-section{
-  /* border: solid greenyellow; */
-}
-
-.customer-care {
-  list-style-type: none;
-  border: 2px solid #f1f1f1;
-  /* Top Right Bottom Left */
-  margin: 65px 40px 200px 300px;
-  width: 250px;
-}
-
-.CC-text {
-  max-width: 13.3em;
-  font-weight: 900;
-  font-size: 20px;
-  padding: 10px;
-  background-color: #f1f1f1;
-  color: rgba(22, 78, 117, 0.9);
-}
-
-.box {
+  background-color: rgba(15, 57, 87, 1.2);
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  list-style-type: none;
+  color: white;
+  padding: 50px;
+  gap: 100px;
+}
+
+/* Anything under 800px */
+@media screen and (max-width: 800px) {
+  .primary-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.primary-footer a {
+  text-decoration: none;
+}
+
+.primary-footer button {
+  background: none;
+	border: none;
+	padding: 0;
+}
+
+/* contact section */
+
+.contact-section {
+  /* border: solid blue; */
   padding: 20px;
+  text-align: center;
+}
+
+#contact-header {
+  margin: 15px;
+  font-size: 1.6em;
+  font-weight: 500;
 }
 
 #contact-numbers {
-  font-size: 18px;
-  padding: 5px;
-  margin: 5px;
+  margin: 25px;
+  font-size: 1.2em;
 }
 
-.box a {
-  text-decoration: none;
+.contact-section button {
+  width: 200px;
+}
+
+#contact-btn {
   color: rgba(22, 78, 117, 0.9);
   background-color: #f1f1f1;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 1.15em;
+  font-weight: 500;
   text-align: center;
   padding: 8px;
   margin-top: 10px;
 }
 
-.box a:hover {
+#contact-btn:hover {
   color: white;
+  cursor: pointer;
   background-color: rgba(22, 78, 117, 1.2);
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   transition: .4s;
 }
 
-/* More Info */
+/* Quick Links section */
 
-.info-section {
-  /* border: solid white; */
+.quick-links-section {
+  /* border: solid greenyellow; */
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  text-align: center;
 }
-
-.more-info {
-  /* Top Right Bottom Left */
-  margin: 80px 100px 200px 100px;
-}
-
-#GM-text {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-#GM-info {
-  margin: 20px 0px 20px 0px;
-  list-style-type: none;
-  /* border: solid red; */
-}
-
-#GM-info a {
+.quick-links-section a {
+  list-style:none;
   text-decoration: none;
-  color: white;
 }
 
-#GM-info a:hover {
+#quick-links-header {
+  margin: 15px;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+ #quick-links-text {
+  margin: 10px;
+  font-size: 1.2em;
+  color: white;
+ }
+
+ #quick-links-text:hover {
   color: rgb(137, 235, 235);
   text-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
+ }
 
-/* Register Section */
+
+/* Register section */
 
 .register-section {
-  /* border: solid red; */
+  /* border: solid purple; */
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
 }
 
-.register {
-  width: 400px;
-  border: 2px solid white;
-  padding: 15px;
-  /* Top Right Bottom Left */
-  margin: 60px 50px 10px 200px;
+#register-header {
+  margin: 15px;
+  font-size: 1.6em;
+  font-weight: 500;
 }
 
-#register-text {
-  font-size: 30px;
-  font-weight: 800;
+.register-section p {
+  margin: 30px;
+  font-size: 1.2em;
 }
 
-.register p {
-  font-size: 18px;
-   margin: 20px 0px 10px 0px;
+.register-section button {
+  width: 250px;
 }
 
-#register-btn  {
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 24em;
+#register-btn {
   color: rgba(22, 78, 117, 0.9);
   background-color: #f1f1f1;
-  font-size: 15px;
-  font-weight: 700;
-  padding: 10px;
+  font-size: 1.15em;
+  font-weight: 500;
   text-align: center;
-  list-style-type: none;
+  padding: 8px;
+  margin-top: 10px;
 }
 
 #register-btn:hover {
   color: white;
+  cursor: pointer;
   background-color: rgba(22, 78, 117, 1.2);
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   transition: .4s;
 }
 
-.footer-logo-box {
-  display: flex;
-  align-items: center;
-  margin-left: 12em;
-  margin-top: 1.5em;
-  gap: 8px;
-}
 
-.logo2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.2em;
-  font-weight: bold;
-  padding: 20px;
-}
 
-#cutlery-logo-footer {
-  display: flex;
-  align-items: center;
-  padding: 2px;
-  background-color: #f1f1f1;
-  border-radius: 50%;
-}
+
 
 /* ############################################################################## */
 /* Home Page */
@@ -536,29 +521,82 @@ section {
   /* border: solid red; */
   margin: 0 auto;
   max-width: 1400px;
+  padding: 10px;
 }
 
-.home-page-image {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
+.first-image {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 650px;
   background-size: cover;
-  /* height: 700px; */
-  padding: 16px;
+  background-image: url("images/homePageImage2.jpg");
+
 }
+
+#first-image-text {
+  font-family: 'Lobster Two', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4.5em;
+  font-weight: 500;
+  /* border: solid red; */
+}
+
+
+.first-text {
+  text-align: center;
+  background-color: #f3f2f2;
+  max-width: 100%;
+  max-height: 250px;
+  padding: 50px;
+}
+
+.first-text h2 {
+  font-size: 1.8em;
+  padding: 20px;
+}
+
+.first-text p {
+  /* border: solid red; */
+  font-size: 1.2em;
+}
+
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px) {
+  .first-image {
+    height: 300px;
+  }
+  #first-image-text {
+    font-size: 3em;
+  }
+  .first-text h2 {
+    font-size: 1.2em;
+  }
+  
+  .first-text p {
+    font-size: 0.8em;
+  }
+}
+
+
 
 .image-grid-primary {
   --gap: 16px;
   --num-cols: 2;
   --row-height: 400px;
 
-  padding: var(--gap);
   display: grid;
   /* for the columns on the grid, we want 4 equal width columns */
   grid-template-columns: repeat(var(--num-cols), 1fr);
   /* we want unlimited rows at the height of 300px */
   grid-auto-rows: var(--row-height);
   gap: var(--gap);
+  /* border: solid red; */
+
 }
 
 .image-grid-primary a {
@@ -607,10 +645,9 @@ section {
 .image-grid-secondary {
   --gap: 16px;
   --num-cols: 3;
-  --row-height: 600px;
+  --row-height: 500px;
 
 
-  padding: var(--gap);
   display: grid;
   /* for the columns on the grid, we want 4 equal width columns */
   grid-template-columns: repeat(var(--num-cols), 1fr);
