@@ -1,8 +1,6 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {headerScroll()};
 
-// window.onscroll = function() { growShrinkLogo()};
-
 function headerScroll() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector(".primary-header").style.padding = "2px";
@@ -22,11 +20,4 @@ function headerScroll() {
   }
 } 
 
-// function growShrinkLogo() {
-//   var Logo = document.getElementsByClassName("cutlery-logo")
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     Logo.style.width = '30px';
-//   } else {
-//     Logo.style.width = '60px';
-//   }
-// }
+
